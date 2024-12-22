@@ -15,8 +15,8 @@ import org.springframework.context.annotation.Configuration;
 @RequiredArgsConstructor
 public class BeanConfiguration {
 
-    //private final IProductRepository productRepository;
-    //private final IProductEntityMapper productMapper;
+    private final IProductRepository productRepository;
+    private final IProductEntityMapper productMapper;
 
     @Bean
     public IProductServicePort productServicePort(IProductPersistencePort productPersistencePort) {

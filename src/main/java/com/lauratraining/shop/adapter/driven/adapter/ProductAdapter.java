@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 
     @Override
     public Product createProduct(Product product) {
-        ProductEntity productEntity = (ProductEntity) productRepository.save(productMapper.toProductEntity(product));
+        ProductEntity productEntity = productRepository.save(productMapper.toProductEntity(product));
 
         return productMapper.toProduct(productEntity);
     }

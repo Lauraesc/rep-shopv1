@@ -6,7 +6,7 @@ import lombok.*;
 @NoArgsConstructor
 @Data //para getters y setters, builder, equals, hashcode, tostring, etc.
 public class Product {
-    private long id;
+    private Long id;
     private String name;
     private String description;
     private double price;
